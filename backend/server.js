@@ -2,7 +2,12 @@ require("dotenv").config();
 const app = require("./app");
 const connectDB = require("./config/db");
 
-
+const requiredEnv = ["MONGO_URI", "TMDB_API_KEY", "JWT_SECRET"];
+requiredEnv.forEach(name => {
+  if (!process.env[name]) {
+    console.error(`❌ Missing required environment variable: ${name}`);
+  }
+});
 connectDB()
   .then(() => {
     const PORT = process.env.PORT || 5000;
@@ -12,5 +17,6 @@ connectDB()
     });
   })
   .catch(err => {
+    console.error("❌ Database connection failed:", err.message);
     process.exit(1);
   });

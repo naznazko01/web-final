@@ -84,3 +84,6 @@ A full-stack movie platform where users can explore popular and top-rated movies
 | `GET` | `/api/movies/top_rated` | Get highest-rated movies. |
 | `GET` | `/api/movies/:id` | Get detailed movie info and trailers. |
 | `GET` | `/api/movies/search` | Search for movies by title. |
+ 
+## My deployment
+https://web-final-d6qn.onrender.com
