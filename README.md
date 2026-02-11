@@ -1,8 +1,8 @@
-# Movie Platform - IMDb Clone
+# Movie Platform 
 
 A full-stack movie platform where users can explore popular and top-rated movies, search for their favorites, and maintain a personalized watchlist.
 
-## 🚀 Features
+##  Features
 - **User Authentication**: Secure Register and Login using JWT and Password Hashing (bcrypt).
 - **Movie Discovery**: Fetches real-time movie data from TMDB API.
 - **Search**: Robust search functionality for finding specific titles.
@@ -12,14 +12,14 @@ A full-stack movie platform where users can explore popular and top-rated movies
 - **Video Trailers**: Navigation and playback of YouTube trailers.
 - **Modern UI**: Polished dark theme with glassmorphism, responsive design, and animations.
 
-## 🛠️ Technology Stack
+##  Technology Stack
 - **Frontend**: Vanilla JavaScript (ES6+), HTML5, CSS3.
 - **Backend**: Node.js, Express.js.
 - **Database**: MongoDB (Mongoose).
 - **Validation**: Joi (Schema-based validation).
 - **External API**: The Movie Database (TMDB).
 
-## 📦 Setup & Installation
+##  Setup & Installation
 
 ### Prerequisites
 - Node.js installed on your machine.
@@ -54,7 +54,7 @@ A full-stack movie platform where users can explore popular and top-rated movies
    Open `frontend/js/api.js` and ensure `API_BASE_URL` matches your backend port (default: `http://localhost:5000/api`).
    Open `frontend/index.html` in your browser.
 
-## 📖 API Documentation
+##  API Documentation
 
 ### Authentication (Public)
 | Method | Endpoint | Description |

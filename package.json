@@ -1,0 +1,15 @@
+{
+    "name": "movie-platform",
+    "version": "1.0.0",
+    "description": "Full-stack Movie Platform",
+    "main": "backend/server.js",
+    "scripts": {
+        "start": "node backend/server.js",
+        "build": "cd backend && npm install",
+        "postinstall": "cd backend && npm install",
+        "backend": "cd backend && npm start"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
