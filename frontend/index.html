@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Movie platform</a>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search movies">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="nav-links">
+            <a href="favorites.html">Watchlist</a>
+            <div id="authLinks">
+                <a href="login.html" class="btn-login">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Welcome to Movie Platform</h1>
+        <p>Your source for movies, TV, and celebrity content.</p>
+    </div>
+
+    <div class="main-content">
+        <div class="section-header">
+            <h2>Popular Movies</h2>
+        </div>
+        <div id="popularMovies" class="movie-grid">
+            <!-- Movies will be loaded here -->
+        </div>
+
+        <div class="section-header">
+            <h2>Top Rated</h2>
+        </div>
+        <div id="topRatedMovies" class="movie-grid">
+            <!-- Movies will be loaded here -->
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

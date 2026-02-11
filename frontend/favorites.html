@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Watchlist - Movie Platform</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Movie Platform</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <div id="authLinks"></div>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <div class="section-header">
+      <h2>Your Watchlist</h2>
+      <p style="color: var(--text-secondary); margin-top: 5px;">Your personal list of movies to watch.</p>
+    </div>
+
+    <div id="watchlistMovies" class="movie-grid">
+      <!-- Watchlist items will be loaded here -->
+      <p style="padding: 20px; color: var(--text-secondary);">Your watchlist is empty.</p>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Override or extend main.js logic for watchlist
+    document.addEventListener('DOMContentLoaded', async () => {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        window.location.href = 'login.html';
+        return;
+      }
+      // Load favorites logic here (when backend is ready)
+    });
+  </script>
+</body>
+
+</html>
